@@ -1,0 +1,19 @@
+# HTML
+# Archive your static HTML project and save it with the build record.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: AzureFileCopy@4
+  inputs:
+    SourcePath: $(build.sourcesDirectory)
+    azureSubscription: 'Meta Corporativo(5ba1321c-f366-43a2-82bd-c06783138deb)'
+    Destination: 'AzureBlob'
+    storage: 'sitemetahomolog'
+    ContainerName: ''
+    BlobPrefix: '$web'
+    
