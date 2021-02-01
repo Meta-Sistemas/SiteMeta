@@ -344,7 +344,7 @@ h1 {
 .sw-logo-ab-adm {
   width: 55%;
 }
-#gerenciamento-credenciario {
+#gerenciamento-crediario {
   background-image: url(../img/background/gerenciamento-crediario.png);
 }
 #administracao-escolar {
@@ -477,8 +477,8 @@ footer p + p {
 }
 
 .link_contact {
-    color: #f6f6f6;
-    text-decoration: none;
+  color: #f6f6f6;
+  text-decoration: none;
 }
 
 .social-media {
