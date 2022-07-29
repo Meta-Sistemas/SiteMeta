@@ -528,6 +528,64 @@ footer p + p {
   font-size: 0.7rem;
   text-align: center;
 }
+/* BRAND */
+.brand {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100%;
+}
+.group-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.brand + .brand {
+  margin-top: 50px;
+}
+.brand-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 20vh;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.bd-logo {
+  width: 70%;
+}
+.brand h3 {
+  margin: 30px 0 40px 0;
+}
+#brand p {
+  margin-top: 10px;
+  text-align: center;
+  color: #615454;
+}
+.brand {
+  width: 28%;
+}
+.brand + .brand {
+  margin-top: 0;
+}
+.brand-logo {
+  height: 25vh;
+}
+/* FIM BRAND */
+
+/*Pular linha flexbox*/
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+/*Fim Pular linha flexbox*/
+
 @media screen and (min-width: 855px) {
   .btn-hamburguer {
     display: none;
