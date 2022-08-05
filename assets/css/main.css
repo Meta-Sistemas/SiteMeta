@@ -564,7 +564,8 @@ footer p + p {
   margin: 30px 0 40px 0;
 }
 #brand p {
-  margin-top: 10px;
+  font-size: x-large;
+  margin-bottom: 4rem;
   text-align: center;
   color: #615454;
 }
