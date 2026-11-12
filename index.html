@@ -1,583 +1,275 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-BR">
   <head>
-    <meta name="viewport" content="initial-scale=1.0; width=device-width" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Desenvolvimento de sistemas sob demanda, consultoria e suporte em redes e infraestrutura, e implementação de IA para empresas."
     />
-    <!-- Fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
-      integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
-      crossorigin="anonymous"
-    />
-
-    <title>Meta Sistemas e Comércio Ltda.</title>
+    <meta name="theme-color" content="#f8f8f7" />
+    <title>Meta Sistemas | Tecnologia para empresas</title>
+    <link rel="icon" href="assets/img/meta-logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <img src="assets/img/logo.png" alt="Logo Meta sistemas" class="logo" />
-      <!-- Menu hamburger -->
-      <button class="btn-hamburguer">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Meta Sistemas — início">
+        <img
+          class="brand-logo"
+          src="assets/img/meta-logo.png"
+          alt="Meta Sistemas"
+          width="812"
+          height="256"
+        />
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <!-- Menu itens -->
-      <nav class="navbar">
-        <ul class="nav">
-          <li xla><a href="#home">Home</a></li>
-          <li><a href="#about">Quem somos</a></li>
-          <li><a href="#occupation">O que fazemos</a></li>
-          <li><a href="#client">Clientes</a></li>
-          <li><a href="#brand">Marcas</a></li>
-          <li><a href="#partnership">Parceiros</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
+      <nav class="site-nav" id="menu-principal" aria-label="Navegação principal">
+        <a href="#empresa">A empresa</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+        <a class="nav-cta" href="#contato">Vamos conversar</a>
       </nav>
     </header>
 
-    <main>
-      <!-- Introdução -->
-      <div class="intro" id="home">
-        <h1>Soluções em Ti</h1>
-        <p>
-          Acreditamos que um ambiente corporativo organizado é a base de uma
-          fundação sólida e possibilitadora de grandes negócios.
-        </p>
-      </div>
-
-      <!-- Sobre nós -->
-      <section id="about">
-        <h2>Quem somos</h2>
-        <div class="description">
-          <p>
-            Somos uma empresa que está no mercado desde 1990, e nestes anos de
-            história estamos investindo em entender as necessidades e os
-            objetivos de cada cliente, para assim, trazer a melhor solução para
-            sua empresa.
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Tecnologia feita para empresas</p>
+          <h1 id="hero-title">
+            Soluções que acompanham
+            <span>o seu negócio.</span>
+          </h1>
+          <p class="hero-intro">
+            Desenvolvimento sob demanda, consultoria em infraestrutura e
+            implementação de IA — com atenção ao que a sua empresa realmente
+            precisa.
           </p>
-          <p>
-            Temos como compromisso levar até nossos clientes serviços e soluções
-            em Tecnologia da Informação, com uma equipe treinada e preparada,
-            com preço justo e assim garantir eficiência e qualidade a nossos
-            clientes.
-          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contato">
+              Fale com a Meta
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="#servicos">Conheça os serviços</a>
+          </div>
         </div>
-        <div class="description">
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-core">
+            <span class="core-mark"></span>
+          </div>
+          <div class="art-label label-code">
+            <span class="label-icon">&lt;/&gt;</span>
+            Sistemas sob medida
+          </div>
+          <div class="art-label label-network">
+            <span class="label-icon" aria-hidden="true">↗</span>
+            Infraestrutura e redes
+          </div>
+          <div class="art-label label-ai">
+            <span class="label-icon" aria-hidden="true">✳</span>
+            Inteligência artificial
+          </div>
+          <div class="art-dot dot-one"></div>
+          <div class="art-dot dot-two"></div>
+        </div>
+        <a class="scroll-cue" href="#empresa">
+          <span aria-hidden="true"></span>
+          <span>Conheça a Meta</span>
+        </a>
+      </section>
+
+      <section class="about section-wrap" id="empresa" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> Experiência que evolui</p>
+          <h2 id="about-title">
+            Tecnologia próxima, pensada para
+            <span>o seu contexto.</span>
+          </h2>
+        </div>
+        <div class="about-copy">
           <p>
-            Oferecemos soluções completas em T.I., desde o projeto da solução
-            até a sua implementação, incluindo o fornecimento e a capacitação
-            técnica de equipe e a extensão de suporte necessária após a
-            conclusão da implementação.
+            Desde 1990, a Meta Sistemas trabalha para entender as necessidades
+            de cada empresa e propor soluções de tecnologia alinhadas aos seus
+            objetivos.
           </p>
           <p>
-            Se você como nós acredita que uma parceria sólida é um bom ponto de
-            partida para o sucesso do seu negócio, conte conosco, estamos
-            aguardando seu contato.
+            Atuamos com desenvolvimento de sistemas customizados, consultoria e
+            suporte em infraestrutura de redes e consultoria para implementar
+            inteligência artificial em processos empresariais.
           </p>
+          <a class="text-link" href="#contato">
+            Conte pra gente o que sua empresa precisa
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
 
-      <!-- Frase -->
-      <div class="phrase">
-        <p class="text-phrase">
-          O modo como podemos contribuir para o sucesso de nossos clientes, é
-          para poder ajudá-los a organizar suas infraestruturas de T.I. de um
-          modo completo e planejado.
-        </p>
-      </div>
-
-      <!-- O que fazemos -->
-      <section id="occupation">
-        <div class="occupation">
-          <h2>O que fazemos</h2>
-          <!-- Descrição -->
-          <p>
-            Problemas na área de T.I. podem causar perdas financeiras e impactar
-            na competitividade de sua empresa.
-          </p>
-          <p class="title-occupation">
-            Você está em busca de soluções em T.I.?
-          </p>
-          <p>
-            Na Meta Sistemas você encontra as melhores soluções para seu
-            negócio. Nosso trabalho é voltado à prestação de serviços,
-            desenvolvimento, treinamento personalizado, assessoria e apoio
-            técnico para solução de problemas relacionados à T.I.
+      <section
+        class="services section-wrap"
+        id="servicos"
+        aria-labelledby="services-title"
+      >
+        <div class="services-heading">
+          <div class="section-heading">
+            <p class="eyebrow"><span></span> Como podemos ajudar</p>
+            <h2 id="services-title">
+              Três frentes.
+              <span>Um trabalho sob medida.</span>
+            </h2>
+          </div>
+          <p class="section-summary">
+            Serviços especializados para apoiar a operação e os próximos passos
+            da sua empresa.
           </p>
         </div>
-        <!-- Imagem de equipe -->
-        <div class="occupation-group">
-          <img
-            src="assets/img/group.png"
-            alt="Equipe de pessoas"
-            class="group"
-          />
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="7" y="8" width="34" height="25" rx="3"></rect>
+                <path d="M17 40h14M24 33v7M15 17h8m-8 6h18"></path>
+              </svg>
+            </div>
+            <p class="service-index">01 / Desenvolvimento</p>
+            <h3>Sistemas sob demanda</h3>
+            <p>
+              Sistemas customizados para os processos e as necessidades
+              específicas da sua empresa.
+            </p>
+            <a href="#contato" aria-label="Converse sobre sistemas sob demanda">
+              Vamos conversar <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="18" y="6" width="12" height="12" rx="3"></rect>
+                <rect x="5" y="30" width="12" height="12" rx="3"></rect>
+                <rect x="31" y="30" width="12" height="12" rx="3"></rect>
+                <path d="M24 18v6M11 30v-6h26v6"></path>
+              </svg>
+            </div>
+            <p class="service-index">02 / Infraestrutura</p>
+            <h3>Consultoria e suporte para redes</h3>
+            <p>
+              Orientação e apoio técnico para planejar, configurar e cuidar da
+              infraestrutura de TI da sua empresa.
+            </p>
+            <a href="#contato" aria-label="Converse sobre infraestrutura e redes">
+              Vamos conversar <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path
+                  d="m24 5 3.8 11.2L39 12l-4.2 11.2L46 27l-11.2 3.8L39 42l-11.2-4.2L24 49l-3.8-11.2L9 42l4.2-11.2L2 27l11.2-3.8L9 12l11.2 4.2L24 5Z"
+                  transform="translate(0 -3) scale(.96)"
+                ></path>
+                <circle cx="24" cy="24" r="5"></circle>
+              </svg>
+            </div>
+            <p class="service-index">03 / Inteligência artificial</p>
+            <h3>IA aplicada aos processos</h3>
+            <p>
+              Consultoria para identificar oportunidades e orientar a
+              implementação de IA nos processos da sua empresa.
+            </p>
+            <a href="#contato" aria-label="Converse sobre inteligência artificial">
+              Vamos conversar <span aria-hidden="true">↗</span>
+            </a>
+          </article>
         </div>
       </section>
 
-      <!-- Swiper - O que fazemos -->
-      ø<div class="swiper-container swiper-container-about">
-        <div class="swiper-wrapper">
-          <!-- Card - Gerenciamento de Crediário -->
-          <div
-            id="gerenciamento-crediario"
-            class="swiper-slide swiper-slide-about"
-          >
-            <!-- Icone -->
-            <div class="swiper-logo-about">
-              <img
-                src="assets/img/icons/logo-gerenciamento-crediario.png"
-                alt=""
-                class="sw-logo-ab"
-              />
-            </div>
-            <!-- Descrição -->
-            <h2>Gerenciamento de Crediário</h2>
-            <p>
-              Controle da Carteira de Lojistas, Clientes e Dívidas, Emissão de
-              Borderôs, além de possuir várias interfaces de comunicação,
-              possibilitando troca de arquivos entre empresas de cobrança,
-              consultas online ao SPC, envio de arquivos para birôs de impressão
-              e muito mais.
-            </p>
-          </div>
-
-          <!-- Card - Administração escolar -->
-          <div
-            id="administracao-escolar"
-            class="swiper-slide swiper-slide-about"
-          >
-            <!-- Ícone -->
-            <div class="swiper-logo-about">
-              <img
-                src="assets/img/icons/logo-administracao-escolar.png"
-                alt=""
-                class="sw-logo-ab-adm"
-              />
-            </div>
-            <!-- Descrição -->
-            <h2>Administração Escolar</h2>
-            <p>
-              Abrange todas as áreas de uma instituição de ensino, adaptando-se
-              desde o ensino fundamental ao superior.
-            </p>
-          </div>
-
-          <!-- Card - Administração financeira -->
-          <div
-            id="administracao-financeira"
-            class="swiper-slide swiper-slide-about"
-          >
-            <!-- ícone -->
-            <div class="swiper-logo-about">
-              <img
-                src="assets/img/icons/logo-administracao-financeira.png"
-                alt=""
-                class="sw-logo-ab"
-              />
-            </div>
-            <!-- Descrição -->
-            <h2>Administração Financeira</h2>
-            <p>
-              Administração Financeira e Controle de receitas e despesas, bem
-              como a emissão de boletos e identificação de pagamentos junto às
-              instituições financeiras. Possui ampla gama de relatórios para o
-              melhor controle possível das finanças de sua empresa.
-            </p>
-          </div>
-
-          <!-- Card - Infraestrutura e redes -->
-          <div id="infraestura-e-redes" class="swiper-slide swiper-slide-about">
-            <!-- ícone -->
-            <div class="swiper-logo-about">
-              <img
-                src="assets/img/icons/logo-infraestrutura-e-redes.png"
-                alt=""
-                class="sw-logo-ab"
-              />
-            </div>
-            <!-- Descrição -->
-            <h2>Infraestrutura e redes</h2>
-            <p>
-              Consultoria abrangente a todas as áreas de T.I., desde
-              especificação dos servidores, configurações das estações,
-              cabeamento estruturado e análise de equipamentos mais adequados às
-              suas necessidades.
-            </p>
-          </div>
-
-          <!-- Card - Serviço de nuvem -->
-          <div id="servico-de-nuvem" class="swiper-slide swiper-slide-about">
-            <!-- Ícone -->
-            <div class="swiper-logo-about">
-              <img
-                src="assets/img/icons/logo-servico-de-nuvem.png"
-                alt=""
-                class="sw-logo-ab"
-              />
-            </div>
-            <!-- Descrição -->
-            <h2>Serviço de nuvem</h2>
-            <p>
-              Possuímos uma equipe especializada em migração e hospedagem com a
-              plataforma Microsoft Azure, com foco em solucionar todas as
-              carências de sua empresa, para que a contratação da estrutura de
-              nuvem seja sob medida sem dispersão de recursos.
-            </p>
-          </div>
+      <section class="contact-cta" aria-labelledby="contact-cta-title">
+        <div>
+          <p class="eyebrow"><span></span> O próximo passo começa aqui</p>
+          <h2 id="contact-cta-title">
+            Vamos conversar sobre o que a sua empresa precisa?
+          </h2>
         </div>
-        <!-- Paginação -->
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <!-- Swiper - Clientes -->
-      <section id="client">
-        <h2>Clientes</h2>
-        <div class="swiper-container swiper-container-client">
-          <div class="swiper-wrapper">
-            <!-- Tercred -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/Tercred.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>TERCRED</h3>
-            </div>
-
-            <!-- Associação dos cirurgiões dentistas da Baixada Santista -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/logo-cliente.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>Associação dos Cirurgiões Dentistas da Baixada Santista</h3>
-            </div>
-
-            <!-- Neo Design e Interiores -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/NeoRJ.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>Neo Design e Interiores</h3>
-            </div>
-
-             <!-- Condomínio Tortugas -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/Tortugas.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>Condomínio Tortugas</h3>
-            </div>
-
-            <!-- Instituto Vencer de desenvolvimento humano -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/Vencer.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>Instituto Vencer de desenvolvimento humano</h3>
-            </div>
-
-            <!-- Julio Cesar Garcia Sociedade de Advogados -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/JulioCesarGarcia.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>Julio Cesar Garcia Sociedade de Advogados</h3>
-            </div>
-
-            <!-- Persiana & CIA -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/Persiana.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>Persiana & CIA</h3>
-            </div>
-
-            <!-- Praiamar Administração -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/Praiamar.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>Praiamar Administração</h3>
-            </div>
-
-            <!-- SM Imports -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/SMImports.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>SM Imports</h3>
-            </div>
-
-            <!-- Smart Center -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/SmartCenter.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>Smart Center</h3>
-            </div>
-
-            <!-- Universitas Ensino Médio -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/UniversitasEnsinoMedio.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>Universitas Ensino Médio</h3>
-            </div>
-
-            <!-- Vitor & Buono -->
-            <div class="swiper-slide swiper-slide-client">
-              <div class="swiper-logo-client">
-                <img
-                  src="assets/img/client/8oCartorio.png"
-                  alt=""
-                  class="sw-logo-cl"
-                />
-              </div>
-              <h3>Vitor & Buono</h3>
-            </div>
-
-          </div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev">
-            <i class="fa fa-chevron-left"></i>
-          </div>
-          <div class="swiper-button-next">
-            <i class="fa fa-chevron-right"></i>
-          </div>
-        </div>
+        <a
+          class="button button-light"
+          href="https://api.whatsapp.com/send?phone=551333949497"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Fale pelo WhatsApp <span aria-hidden="true">↗</span>
+        </a>
       </section>
-
-      <!-- Frase -->
-      <div class="phrase">
-        <p class="text-phrase">
-          Nossa principal meta é trabalhar em parceria com nossos clientes, para
-          que possamos oferecer um serviço de melhor qualidade, possibilitando
-          assim que nosso trabalho preserve as características de cada cliente.
-        </p>
-      </div>
-
-      <!-- Marcas -->
-      <section id="brand">
-        <h2>Marcas</h2>
-        <p>
-          Marcas licenciadas para uso do sistema de Gerenciamento de Crediário.
-        </p>
-        <div class="group-brand">
-            <!-- Tercred -->
-            <div class="brand">
-                <!-- Logo -->
-                <div class="brand-logo">
-                    <img src="assets/img/brand/TERCRED-01-FundoTransparente.png"
-                         alt="Logo da Tercred"
-                         class="bd-logo" />
-                </div>
-                <!-- Descrição -->
-                <h3>Tercred</h3>
-            </div>
-            <!-- Tercred -->
-            <div class="brand">
-                <!-- Logo -->
-                <div class="brand-logo">
-                    <img src="assets/img/brand/TERCRED-03-FundoTransparente.png"
-                         alt="Logo da Tercred"
-                         class="bd-logo" />
-                </div>
-                <!-- Descrição -->
-                <h3>Tercred</h3>
-            </div>
-            <!--Pular linha-->
-            <div class="break"></div>
-            <!-- Socred -->
-            <div class="brand">
-                <!-- Logo -->
-                <div class="brand-logo">
-                    <img src="assets/img/brand/SOCRED-01-FundoTransparente.png"
-                         alt="Logo da Socred"
-                         class="bd-logo" />
-                </div>
-                <!-- Descriçãp -->
-                <h3>Socred</h3>
-            </div>
-            <!-- Socred -->
-            <div class="brand">
-                <!-- Logo -->
-                <div class="brand-logo">
-                    <img src="assets/img/brand/SOCRED-03-FundoTransparente.png"
-                         alt="Logo da Socred"
-                         class="bd-logo" />
-                </div>
-                <!-- Descriçãp -->
-                <h3>Socred</h3>
-            </div>
-        </div>
-      </section>
-
-      <!-- Parceiros -->
-      <section id="partnership">
-        <h2>Parceiros</h2>
-        <div class="group-partnership">
-          <!-- Microsoft -->
-          <div class="partnership">
-            <!-- Logo -->
-            <div class="partnership-logo">
-              <img
-                src="assets/img/partnership/logo-microsoft.png"
-                alt="Logo da Microsoft"
-                class="ps-logo"
-              />
-            </div>
-            <!-- Descrição -->
-            <h3>Microsoft</h3>
-            <p>
-              A Meta Sistemas e a Microsoft possuem uma relação de longa data.
-              Essa parceria é focada em ajudar nossos clientes nas melhores
-              tecnologias em serviços de nuvem (Azure) e Office 365, assim
-              garantindo inovações disruptivas. A Meta Sistema está aqui para
-              ajudar a conectar, colaborar e dar suporte a transformação
-              digital.
-            </p>
-          </div>
-
-          <!-- Acronis -->
-          <div class="partnership">
-            <!-- Logo -->
-            <div class="partnership-logo">
-              <img
-                src="assets/img/partnership/logo.png"
-                alt="Logo da Microsoft"
-                class="ps-logo"
-              />
-            </div>
-            <!-- Descriçãp -->
-            <h3>Acronis</h3>
-            <p>
-              A Acronis é a parceira da Meta Sistemas em ferramenta para Backup
-              da sua empresa. As soluções da Acronis incluem softwares de backup
-              para servidores físicos, virtuais e em nuvem, gerenciamento e
-              compartilhamento seguro de arquivos. Todos os produtos Acronis
-              oferecem soluções fáceis, completas e seguras para dados em
-              dispositivos locais, móveis e em nuvem.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer id="contact">
-        <!-- Contato -->
-        <div class="contact">
-          <h2>Contato</h2>
-          <p>Venha nos visitar!</p>
-          <p>Estamos sempre à disposição para recebê-lo!</p>
-          <p>Horário de funcionamento: de segunda a sexta das 9h às 18h.</p>
-
-          <div class="contact-description">
-            <p>
-              <i class="fas fa-phone"></i>Telefone:
-              <a class="link_contact" href="tel:+551333949496" target="_blank"
-                >(13) 3394-9496</a
-              >
-            </p>
-            <p>
-              <i class="fab fa-whatsapp"></i>WhatsApp:
-              <a class="link_contact" href="https://api.whatsapp.com/send?phone=551333949497" target="_blank"
-                >(13) 3394-9497</a
-              >
-            </p>
-            <p>
-              <i class="fas fa-envelope"></i>E-mail:
-              <a
-                class="link_contact"
-                href="mailto:contato@metasistemas.com.br"
-                target="_blank"
-                >contato@metasistemas.com.br</a
-              >
-            </p>
-            <p>
-              <i class="fas fa-map-marked-alt"></i>Endereço:
-              <a
-                class="link_contact"
-                href="https://goo.gl/maps/RJ8WdoPo38NmjovL8"
-                target="_blank"
-                >Av. Ana Costa, 146, cj. 307 - Santos - SP - 11060-000</a
-              >
-            </p>
-          </div>
-        </div>
-        <!-- Social Media -->
-        <div class="social-media">
-          <a
-            href="https://www.linkedin.com/company/meta-sistemas-e-assessoria-ltda/"
-            target="_blank"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
-      </footer>
-
-      <!-- Copyright -->
-      <div class="copyright">
-        <p>
-          <i class="far fa-copyright"></i>2025 Todos os direitos reservados.
-        </p>
-      </div>
     </main>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- JS -->
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <footer class="site-footer" id="contato">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#inicio" aria-label="Meta Sistemas — voltar ao início">
+            <img
+              src="assets/img/meta-logo.png"
+              alt="Meta Sistemas"
+              width="812"
+              height="256"
+            />
+          </a>
+          <p>Tecnologia para empresas, desde 1990.</p>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-label">Entre em contato</p>
+          <a href="tel:+551333949496">(13) 3394-9496</a>
+          <a
+            href="https://api.whatsapp.com/send?phone=551333949497"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp: (13) 3394-9497
+          </a>
+          <a href="mailto:contato@metasistemas.com.br">
+            contato@metasistemas.com.br
+          </a>
+        </div>
+        <div class="footer-address">
+          <p class="footer-label">Visite a Meta</p>
+          <a
+            href="https://goo.gl/maps/RJ8WdoPo38NmjovL8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Av. Ana Costa, 146, cj. 307<br />
+            Santos - SP - 11060-000
+          </a>
+          <p>De segunda a sexta, das 9h às 18h.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Meta Sistemas. Todos os direitos reservados.</p>
+        <a
+          href="https://www.linkedin.com/company/meta-sistemas-e-assessoria-ltda/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Meta Sistemas no LinkedIn"
+        >
+          LinkedIn <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
