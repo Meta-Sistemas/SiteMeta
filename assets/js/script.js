@@ -1,74 +1,29 @@
-window.onload = function() {
-    // Menu
-    const btnHamburguer = document.getElementsByClassName("btn-hamburguer");
-    const navbar = document.getElementsByClassName("navbar")[0];
-    
-    for ( btn of btnHamburguer ) {
-        btn.addEventListener("click", function() {
-            this.classList.toggle("active");
-            navbar.classList.toggle("active");
-        });
-    }
+const menuButton = document.querySelector(".menu-toggle");
+const navigation = document.querySelector("#menu-principal");
 
-    document.getElementsByClassName("nav-item").onclick = function(){
-        document.getElementsByClassName("nav-item").style.color = '#B83F48';
-    }
+if (menuButton && navigation) {
+  const closeMenu = () => {
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Abrir menu");
+    navigation.classList.remove("is-open");
+  };
 
-    // Swiper - O que fazemos
-    var swiper = new Swiper('.swiper-container-about', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        autoplay: {
-            delay: 3000,
-        },
-        breakpoints: {
-            800: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-                slidesPerGroup: 1
-            },
-    
-            1000: {
-                slidesPerView: 3,
-                spaceBetween: 0,
-                slidesPerGroup: 1
-            }
-        }
-        
-    });
-    
-    // Swiper - Clientes
-    var swiper1 = new Swiper('.swiper-container-client', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            800: {
-                slidesPerView: 3,
-                spaceBetween: 35,
-                slidesPerGroup: 1
-            },
-    
-            1000: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-                slidesPerGroup: 1
-            }
-        }
-        
-    });
-    
+  menuButton.addEventListener("click", () => {
+    const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", String(!isExpanded));
+    menuButton.setAttribute("aria-label", isExpanded ? "Abrir menu" : "Fechar menu");
+    navigation.classList.toggle("is-open", !isExpanded);
+  });
+
+  navigation.addEventListener("click", (event) => {
+    if (event.target instanceof Element && event.target.closest("a")) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
 }
